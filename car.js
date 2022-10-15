@@ -64,10 +64,17 @@ class Car {
     }
 
     draw(ctx) {
+
+        
+
         ctx.save();
+
+        ctx.strokeStyle = "white";
+
         ctx.translate(this.x,this.y);
         ctx.rotate(-this.angle);
 
+        ctx.strokeStyle = "white";
         ctx.beginPath();
         ctx.rect(
             -this.width/2,
